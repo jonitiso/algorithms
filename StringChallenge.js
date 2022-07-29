@@ -17,11 +17,7 @@ function StringChallenge(str1, str2) {
     }
   })
   console.log(dict)
-  if (Object.values(dict).every((e) => !e)) {
-    return true
-  } else {
-    return false
-  }
+  return !!(Object.values(dict).every((e) => !e)))
 }
 
 StringChallenge('hola', 'hlao');
